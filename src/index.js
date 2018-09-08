@@ -1,13 +1,7 @@
 import './main.css';
-import DG from '2gis-maps';
+import {initMap} from './map';
 
-const map = DG.map('map', {
-  center: [54.98, 82.89],
-  zoom: 13,
-  fullscreenControl: false
-});
-
-map.zoomControl.setPosition('topright');
+const map = initMap();
 
 const searchForm = document.getElementById('search-form');
 
