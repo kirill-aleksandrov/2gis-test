@@ -6,3 +6,11 @@ html, body {
 #map {
     min-height: 100%;
 }
+
+#search {
+    position: fixed;
+    z-index: 1;
+    margin: 10px;
+    background: #3d3d3d;
+    padding: 5px;
+}
