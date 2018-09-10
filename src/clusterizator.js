@@ -10,13 +10,13 @@ const clusterSizes = [
 function clusterize(coordinates, size) {
   const clusters = [];
 
-  coordinates.forEach(latLgn => {
+  coordinates.forEach(latLng => {
     const containedInCluster = clusters.find(
-      cluster => cluster.toBounds(size).contains(latLgn)
+      cluster => cluster.toBounds(size).contains(latLng)
     );
 
     if (!containedInCluster) {
-      clusters.push(latLgn);
+      clusters.push(latLng);
     }
   });
 
